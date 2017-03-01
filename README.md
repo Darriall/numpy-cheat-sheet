@@ -39,14 +39,14 @@ The most important difference for data science is the ability to do **element-wi
 `axis 1` always refers to column
 
 | Operator     | Description   | Documentation |
-| :------------- | :------------- | --|
+| :------------- | :------------- | :--------|
 |`np.array([1,2,3])`|1d array|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.array.html#numpy.array)|
 |`np.array([(1,2,3),(4,5,6)])`|2d array|see above|
 |`np.arange(start,stop,step)`|Arange array|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.arange.html)|
 
 ##### Placeholders <a name="place"></a>
 | Operators | Description |Documentation|
-| :------------- | :------------- ||
+| :------------- | :------------- |:---------- |
 |`np.linspace(0,2,9)`|Add evenly spaced values btw intervall to array of length |[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.linspace.html)|
 |`np.zeros((1,2))`|Create and array filled with zeros|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.zeros.html)|
 |`np.ones((1,2))`|Creates an array filled with ones|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.ones.html#numpy.ones)|
@@ -109,7 +109,7 @@ print(y)
 
 ##### Adding or Removing Elements <a name="addrem"></a>
 |Operator|Description|Documentation|
-|-|-|-|
+|:-----------|:--------|:---------|
 |`np.append(a,b)`|Append items to array|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.append.html)|
 |`np.insert(array, 1, 2, axis)`|Insert items into array at axis 0 or 1|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.insert.html)|
 |`array.resize((2,4))`|Resize array to shape(2,4)|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.resize.html)|
@@ -117,14 +117,14 @@ print(y)
 
 ##### Combining Arrays <a name="comb"></a>
 |Operator|Description|Documentation|
-|-|-|-|
+|:---------|:-------|:---------|
 |`np.concatenate((a,b),axis=0)`|Concatenates 2 arrays, adds to end|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.concatenate.html)|
 |`np.vstack((a,b))`|Stack array row-wise|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.vstack.html)|
 |`np.hstack((a,b))`|Stack array column wise|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.hstack.html#numpy.hstack)|
 
 ##### Splitting Arrays <a name="split"></a>
 |Operator|Description|Documentation|
-|-|-|-|
+|:---------|:-------|:------|
 |`numpy.split()`||[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.split.html)|
 |`np.array_split(array, 3)`|Split an array in sub-arrays of (nearly) identical size|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.array_split.html#numpy.array_split)|
 |`numpy.hsplit(array, 3)`|Split the array horizontally at 3rd index|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.hsplit.html#numpy.hsplit)|
@@ -132,7 +132,7 @@ print(y)
 
 ##### More <a name="more"></a>
 |Operator|Description|Documentation|
-|-|-|-|
+|:--------|:--------|:--------|
 |`other = ndarray.flatten()`|Flattens a 2d array to 1d|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.flatten.html)|
 |`array = np.transpose(other)`</br> `array.T` |Transpose array|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.transpose.html)|
 
@@ -214,7 +214,7 @@ print(c)
 |`array[0:2,1]`|Select items of rows 0 and 1 at column 1|see above|
 |`array[:1]`|Select items of row 0 (equals array[0:1, :])|see above|
 |`array[1,...]`|equals array[1,:,:]|see above|
-|`array[ : :-1]`|Reverses `array`|see above||
+|`array[ : :-1]`|Reverses `array`|see above|
 
 
 ###### Examples <a name"exp"></a>
