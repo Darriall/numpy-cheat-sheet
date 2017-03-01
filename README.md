@@ -33,7 +33,7 @@ The most important difference for data science is the ability to do **element-wi
 
 </br>
 
-#### Basics <a name="basics"></a>
+## Basics <a name="basics"></a>
 
 `axis 0` always refers to row </br>
 `axis 1` always refers to column
@@ -44,7 +44,7 @@ The most important difference for data science is the ability to do **element-wi
 |`np.array([(1,2,3),(4,5,6)])`|2d array|see above|
 |`np.arange(start,stop,step)`|Arange array|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.arange.html)|
 
-##### Placeholders <a name="place"></a>
+### Placeholders <a name="place"></a>
 | Operators | Description |Documentation|
 | :------------- | :------------- |:---------- |
 |`np.linspace(0,2,9)`|Add evenly spaced values btw intervall to array of length |[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.linspace.html)|
@@ -53,7 +53,7 @@ The most important difference for data science is the ability to do **element-wi
 |`np.random.random((5,5))`|Creates random array|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.random.random.html)|
 |`np.empty((2,2))`|Creates an empty array|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.empty.html)|
 
-##### Examples <a name="ex"></a>
+### Examples <a name="ex"></a>
 
 ```python
 # 1 dimensional
@@ -76,8 +76,8 @@ y = np.arange(3,7,2)
 
 </br>
 
-#### Array <a name="arrays"></a>
-##### Array Properties <a name="props"></a>
+## Array <a name="arrays"></a>
+### Array Properties <a name="props"></a>
 |Syntax|Description|Documentation|
 |:-------------|:-------------|:-----------|
 |`array.shape`|Dimensions (Rows,Columns)|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.shape.html)|
@@ -88,7 +88,7 @@ y = np.arange(3,7,2)
 |`array.astype(type)`|Converts to Data Type|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.astype.html)|
 |`type(array)`|Type of Array|[link](https://docs.scipy.org/doc/numpy/user/basics.types.html)|
 
-##### Copying/Sorting <a name="grops"></a>
+### Copying/Sorting <a name="grops"></a>
 | Operators | Descriptions     | Documentation |
 | :------------- | :------------- | :----------- |
 |`np.copy(array)`|Creates copy of array|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.copy.html)|
@@ -96,7 +96,7 @@ y = np.arange(3,7,2)
 |`array.sort()`|Sorts an array|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.sort.html)|
 |`array.sort(axis=0)`|Sorts axis of array|see above|
 
-###### Examples <a name="array-example"></a>
+#### Examples <a name="array-example"></a>
 ```python
 # Sort sorts in ascending order
 y = np.array([10, 9, 8, 7, 6, 5, 4, 3, 2, 1])
@@ -105,9 +105,9 @@ print(y)
 >>> [ 1  2  3  4  5  6  7  8  9  10]
 ```
 
-#### Array Manipulation Routines <a name="man"></a>
+## Array Manipulation Routines <a name="man"></a>
 
-##### Adding or Removing Elements <a name="addrem"></a>
+### Adding or Removing Elements <a name="addrem"></a>
 |Operator|Description|Documentation|
 |:-----------|:--------|:---------|
 |`np.append(a,b)`|Append items to array|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.append.html)|
@@ -115,14 +115,14 @@ print(y)
 |`array.resize((2,4))`|Resize array to shape(2,4)|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.resize.html)|
 |`np.delete(array,1,axis)`|Deletes items from array|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.delete.html)|
 
-##### Combining Arrays <a name="comb"></a>
+### Combining Arrays <a name="comb"></a>
 |Operator|Description|Documentation|
 |:---------|:-------|:---------|
 |`np.concatenate((a,b),axis=0)`|Concatenates 2 arrays, adds to end|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.concatenate.html)|
 |`np.vstack((a,b))`|Stack array row-wise|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.vstack.html)|
 |`np.hstack((a,b))`|Stack array column wise|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.hstack.html#numpy.hstack)|
 
-##### Splitting Arrays <a name="split"></a>
+### Splitting Arrays <a name="split"></a>
 |Operator|Description|Documentation|
 |:---------|:-------|:------|
 |`numpy.split()`||[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.split.html)|
@@ -130,7 +130,7 @@ print(y)
 |`numpy.hsplit(array, 3)`|Split the array horizontally at 3rd index|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.hsplit.html#numpy.hsplit)|
 
 
-##### More <a name="more"></a>
+### More <a name="more"></a>
 |Operator|Description|Documentation|
 |:--------|:--------|:--------|
 |`other = ndarray.flatten()`|Flattens a 2d array to 1d|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.flatten.html)|
@@ -138,9 +138,9 @@ print(y)
 
 </br>
 
-#### Mathematics <a name="maths"></a>
+## Mathematics <a name="maths"></a>
 
-##### Operations <a name="ops"></a>
+### Operations <a name="ops"></a>
 | Operator | Description     |Documentation|
 | :------------- | :------------- |:---------|
 |`np.add(x,y)`|Addition|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.add.html)|
@@ -155,7 +155,7 @@ print(y)
 
 Remember: NumPy array operations work element-wise.
 
-###### Example <a name="operations-examples"></a>
+#### Example <a name="operations-examples"></a>
 ```python
 # If a 1d array is added to a 2d array (or the other way), NumPy
 # chooses the array with smaller dimension and adds it to the one
@@ -167,7 +167,7 @@ print(np.add(a, b))
      [5 7 9]]
 ```
 
-##### Comparison
+### Comparison
 | Operator | Description | Documentation |
 | :------------- | :------------- |:---------|
 |`==`|Equal|[link](https://docs.python.org/2/library/stdtypes.html)|
@@ -178,7 +178,7 @@ print(np.add(a, b))
 |`>=`|Greater than or equal|[link](https://docs.python.org/2/library/stdtypes.html)|
 |`np.array_equal(x,y)`|Array-wise comparison|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.array_equal.html)|
 
-###### Example <a name="comparison-example"></a>
+#### Example <a name="comparison-example"></a>
 ```python
 # Using comparison operators will create boolean NumPy arrays
 z = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
@@ -186,7 +186,7 @@ c = z < 6
 print(c)
 >>> [ True  True  True  True  True False False False False False]
 ```
-##### Basic Statistics <a name="stats"></a>
+### Basic Statistics <a name="stats"></a>
 | Operator | Description    | Documentation |
 | :------------- | :------------- |:--------- |
 |`array.mean()`|Mean|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.mean.html#numpy.mean)|
@@ -194,7 +194,7 @@ print(c)
 |`array.corrcoef()`|Correlation Coefficient|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.corrcoef.html#numpy.corrcoef)|
 |`array.std(array)`|Standard Deviation|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.std.html#numpy.std)|
 
-##### More <a name="more"></a>
+### More <a name="more"></a>
 | Operator | Description    | Documentation |
 | :------------- | :------------- |:--------- |
 |`array.sum()`|Array-wise sum|[link](https://docs.scipy.org/doc/numpy/reference/generated/numpy.sum.html)|
@@ -204,7 +204,7 @@ print(c)
 
 </br>
 
-#### Slicing and Subsetting <a name="ss"></a>
+## Slicing and Subsetting <a name="ss"></a>
 |Operator|Description|Documentation|
 | :------------- | :------------- | :------------- |
 |`array[i]`|1d array at index i|[link](https://docs.scipy.org/doc/numpy/reference/arrays.indexing.html)|
@@ -217,7 +217,7 @@ print(c)
 |`array[ : :-1]`|Reverses `array`|see above|
 
 
-###### Examples <a name"exp"></a>
+#### Examples <a name"exp"></a>
 ```python
 b = np.array([(1, 2, 3), (4, 5, 6)])
 
@@ -241,7 +241,7 @@ print(b[:, 0])
 
 </br>
 
-#### Tricks <a name="tricks"></a>
+## Tricks <a name="tricks"></a>
 This is a growing list of examples
 
 "SQL WHERE trick", couldn't come up with a better title...
@@ -265,6 +265,6 @@ print(y[x])
 
 </br>
 
-#### Credits <a name="creds"></a>
+## Credits <a name="creds"></a>
 [Datacamp](https://www.datacamp.com/home),
 [Quandl](https://s3.amazonaws.com/quandl-static-content/Documents/Quandl+-+Pandas,+SciPy,+NumPy+Cheat+Sheet.pdf) & [Official docs](https://docs.scipy.org/doc/numpy/)
