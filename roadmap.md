@@ -1,8 +1,10 @@
 # Roadmap
 
 ## short term
-   [ ] Slicing </br>
-   [ ] Array Manipulation
+   [x] Slicing </br>
+   [x] Array Manipulation
+   [ ] Fix mean/median table confusion
 
-## log term
-   [ ] occupy links for documentation
+## long term
+   [x] occupy links for documentation </br>
+   [ ] example code
